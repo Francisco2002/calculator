@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    border: 1px solid #040404;
+    display: block;
+    min-width: 300px;
+    padding: 5px;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px #cecece;
+}
+
+.calculator #display {
+    background-color: #cecece;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.calculator #display #current {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.calculator #keyboard {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.calculator #keyboard .row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.calculator #keyboard .row + .row {
+    margin-top: 5px;
+}
+
+.calculator #keyboard .data {
+    background-color: #cecece;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.calculator #keyboard .data:active {
+    background-color: rgba(206, 206, 206, 0.5);
+}
+
+.calculator #keyboard .data + .data {
+    margin-left: 5px;
+}
